@@ -1,6 +1,7 @@
-import React, { version } from 'react'
-import applyVueInReact, { VueContainer } from './applyVueInReact'
-import options, { setOptions } from './options'
+import * as React from 'react'
+const { version } = React
+import applyVueInReact from './applyVueInReact'
+import { setOptions } from './options'
 import { createPortal } from 'react-dom'
 import ReactDOM from 'react-dom'
 // vueRootInfo是为了保存vue的root节点options部分信息，现在保存router、store，在applyVueInReact方法中创建vue的中间件实例时会被设置
